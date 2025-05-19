@@ -2,6 +2,12 @@
 # support i2c_port, i2s_port settings
 # support pa_gain, i2c_addr setting
 
+Board: MUSE_RADIO
+i2c: {sda: 18, scl: 11}
+i2s: {mclk: 0, bclk: 5, ws: 16, dout: 17, din: 4}
+out: {codec: ES8388, pa: 46, use_mclk: 0, pa_gain:9}
+in: {codec: ES8388, use_mclk: 0}
+
 Board: S3_Korvo_V2
 i2c: {sda: 17, scl: 18}
 i2s: {mclk: 16, bclk: 9, ws: 45, din: 10, dout: 8}
